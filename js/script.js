@@ -12,16 +12,6 @@ let theName = [];
 let a = parseInt(prompt('Inserire numero'));
 let b = parseInt(prompt('Inserire numero'));
 
-
-theName = selezione(name, a, b);
-
-function selezione(array, min, max) {
-    let arrayFiltrato = [];
-
-    name.forEach(element => {
-        if(element >= a & element >= b ){
-            arrayFiltrato.push(name[i]);
-        }
-    })
-};
-console.log(arrayFiltrato);
+//* soluzione con filter
+arrayFiltered = name.filter((element,index) => index >= a && index <= b);
+console.log(arrayFiltered);

@@ -4,24 +4,24 @@
 // Usiamo i nuovi metodi degli array foreach o filter
 
 // creazione dei due array:
-var arrayIniziale = ['giulia', 'davide', 'lucia', 'marco', 'andrea'];
-console.log(arrayIniziale);
-var arrayFinale = [];
+let name = ['giulia', 'davide', 'lucia', 'marco', 'andrea'];
+console.log(name);
+let theName = [];
 
 // inserire numeri
-var a = parseInt(prompt('Inserire numero'));
-var b = parseInt(prompt('Inserire numero'));
+let a = parseInt(prompt('Inserire numero'));
+let b = parseInt(prompt('Inserire numero'));
 
-arrayFinale = selezione(arrayIniziale, a, b);
+
+theName = selezione(name, a, b);
 
 function selezione(array, min, max) {
-    var arrayFiltrato = [];
+    let arrayFiltrato = [];
 
-    for(i= 0; i < arrayIniziale.length; i++) {
-        if(i >= a && i <= b) {
-            arrayFiltrato.push(arrayIniziale[i]);
+    name.forEach(element => {
+        if(element >= a & element >= b ){
+            arrayFiltrato.push(name[i]);
         }
-    }   
-    return arrayFiltrato;
-} 
-console.log(arrayFinale);
+    })
+};
+console.log(arrayFiltrato);

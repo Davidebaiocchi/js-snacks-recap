@@ -6,7 +6,6 @@
 // creazione dei due array:
 let name = ['giulia', 'davide', 'lucia', 'marco', 'andrea'];
 console.log(name);
-let theName = [];
 
 // inserire numeri
 let a = parseInt(prompt('Inserire numero'));
